@@ -1,0 +1,21 @@
+{
+  "name": "grid-los-backend",
+  "version": "1.0.0",
+  "description": "二维方格地图视线遮挡与可见区域解释后端（TypeScript + Node.js + SQLite）",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test dist-test",
+    "start": "node --no-warnings dist/cli.js serve",
+    "demo": "node --no-warnings dist/cli.js demo",
+    "cli": "node --no-warnings dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
